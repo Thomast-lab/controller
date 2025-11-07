@@ -1,4 +1,4 @@
-#include "thomas_pursuit/thomas_pursuit.hpp"
+#include "thomas_pursuit/thomas.hpp"
 #include <algorithm>
 #include <string>
 #include <memory>
