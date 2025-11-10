@@ -1,2 +1,1 @@
-source;share/thomas_pursuit/environment/ament_prefix_path.sh
-source;share/thomas_pursuit/environment/path.sh
+/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit/ament_cmake_environment_hooks/local_setup.dsv

@@ -1,0 +1,17 @@
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit//thomas_pursuit_plugin.xml
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/package_run_dependencies/thomas_pursuit
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/parent_prefix_path/thomas_pursuit
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/ament_prefix_path.sh
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/ament_prefix_path.dsv
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/path.sh
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/path.dsv
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.bash
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.sh
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.zsh
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.dsv
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/package.dsv
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/packages/thomas_pursuit
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/nav2_core__pluginlib__plugin/thomas_pursuit
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/cmake/thomas_pursuitConfig.cmake
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/cmake/thomas_pursuitConfig-version.cmake
+/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/package.xml

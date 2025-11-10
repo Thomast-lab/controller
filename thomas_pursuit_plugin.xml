@@ -1,10 +1,7 @@
-<class librairies>
-	<library path="nav2_thomas_pursuit_">
-		<class type="nav2_thomas_pursuit_::ThomasPursuit" 
-	base_class_type="nav2_core::Controller">
-			<description>
-			  a pure pursuit customized
-			</description>
-		</class>
-	</library>
-</class_libraries>
+<library path="thomas_pursuit">
+	<class type="nav2_thomas_pursuit_::ThomasPursuit" base_class_type="nav2_core::Controller">
+		<description>
+			a pure pursuit customized
+		</description>
+	</class>
+</library>
