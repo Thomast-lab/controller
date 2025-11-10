@@ -1,4 +1,0 @@
-Invoking command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit -- -j12 -l12
-Invoked command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit -- -j12 -l12
-Invoking command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit
-Invoked command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit

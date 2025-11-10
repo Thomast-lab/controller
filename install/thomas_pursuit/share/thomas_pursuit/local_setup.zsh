@@ -1,1 +1,0 @@
-/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit/ament_cmake_environment_hooks/local_setup.zsh
