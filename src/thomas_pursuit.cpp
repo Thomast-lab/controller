@@ -123,8 +123,9 @@ geometry_msgs::msg::TwistStamped ThomasPursuit::computeVelocityCommands(
     
         auto curvature = 2.0 * goal_pose.position.y /
             (goal_pose.position.x * goal_pose.position.x + goal_pose.position.y * goal_pose.position.y);
-        curvature = std::clamp(curvature, -curvature_limit_, curvature_limit_);
-        linear_vel = desired_linear_vel_ * curvature;
+/*         curvature = std::clamp(curvature, -curvature_limit_, curvature_limit_);
+ */        linear_vel = desired_linear_vel_;
+        angular_vel = desired_linear_vel_ * curvature;
     } else {
     linear_vel = 0.0;
     angular_vel = max_angular_vel_;
