@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit -- -j12 -l12
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target thomas_pursuit[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/thomas_pursuit.dir/src/thomas_pursuit.cpp.o[0m
+[3.635s] [100%] [32m[1mLinking CXX shared library libthomas_pursuit.so[0m
+[3.926s] [100%] Built target thomas_pursuit
+[3.935s] Invoked command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit -- -j12 -l12
+[3.944s] Invoking command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit
+[3.949s] -- Install configuration: ""
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/thomas_pursuit_plugin.xml
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/package_run_dependencies/thomas_pursuit
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/parent_prefix_path/thomas_pursuit
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/ament_prefix_path.sh
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/ament_prefix_path.dsv
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/path.sh
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/path.dsv
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.bash
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.sh
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.zsh
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.dsv
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/package.dsv
+[3.950s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/packages/thomas_pursuit
+[3.951s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/nav2_core__pluginlib__plugin/thomas_pursuit
+[3.951s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/cmake/thomas_pursuitConfig.cmake
+[3.951s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/cmake/thomas_pursuitConfig-version.cmake
+[3.951s] -- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/package.xml
+[3.952s] Invoked command in '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit

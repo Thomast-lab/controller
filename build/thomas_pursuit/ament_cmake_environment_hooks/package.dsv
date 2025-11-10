@@ -1,0 +1,4 @@
+source;share/thomas_pursuit/local_setup.bash
+source;share/thomas_pursuit/local_setup.dsv
+source;share/thomas_pursuit/local_setup.sh
+source;share/thomas_pursuit/local_setup.zsh

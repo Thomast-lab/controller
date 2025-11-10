@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target thomas_pursuit[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/thomas_pursuit.dir/src/thomas_pursuit.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libthomas_pursuit.so[0m
+[100%] Built target thomas_pursuit
+-- Install configuration: ""
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/thomas_pursuit_plugin.xml
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/package_run_dependencies/thomas_pursuit
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/parent_prefix_path/thomas_pursuit
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/ament_prefix_path.sh
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/ament_prefix_path.dsv
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/path.sh
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/environment/path.dsv
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.bash
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.sh
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.zsh
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/local_setup.dsv
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/package.dsv
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/packages/thomas_pursuit
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/ament_index/resource_index/nav2_core__pluginlib__plugin/thomas_pursuit
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/cmake/thomas_pursuitConfig.cmake
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/cmake/thomas_pursuitConfig-version.cmake
+-- Installing: /home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit/share/thomas_pursuit/package.xml

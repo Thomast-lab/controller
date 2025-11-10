@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000286] (thomas_pursuit) JobQueued: {'identifier': 'thomas_pursuit', 'dependencies': OrderedDict()}
+[0.000545] (thomas_pursuit) JobStarted: {'identifier': 'thomas_pursuit'}
+[0.005357] (thomas_pursuit) JobProgress: {'identifier': 'thomas_pursuit', 'progress': 'cmake'}
+[0.005770] (thomas_pursuit) Command: {'cmd': ['/usr/bin/cmake', '/home/traore/Documents/ws/thomas_pursuit', '-DCMAKE_INSTALL_PREFIX=/home/traore/Documents/ws/thomas_pursuit/install/thomas_pursuit'], 'cwd': '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'fr_FR:en'), ('USER', 'traore'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '2294065'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/traore'), ('OLDPWD', '/home/traore/Documents/ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '3955'), ('SYSTEMD_EXEC_PID', '4134'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2150019'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'traore'), ('JOURNAL_STREAM', '8:25380'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'traore'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/traore-Latitude-5430:@/tmp/.ICE-unix/4105,unix/traore-Latitude-5430:/tmp/.ICE-unix/4105'), ('INVOCATION_ID', '8fdd609269cc4808988f8ba544c34389'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1QH8D3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXJpvGmU/agent.2294064'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b2bc9c22-40fb-459a-965f-4e4e5850cc0e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.055445] (thomas_pursuit) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.096196] (thomas_pursuit) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.100012] (-) TimerEvent: {}
+[0.101042] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.155600] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.160209] (thomas_pursuit) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.160371] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.160546] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.162584] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200108] (-) TimerEvent: {}
+[0.224523] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.229160] (thomas_pursuit) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.229356] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.229521] (thomas_pursuit) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.233983] (thomas_pursuit) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300200] (-) TimerEvent: {}
+[0.339203] (thomas_pursuit) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400415] (-) TimerEvent: {}
+[0.406865] (thomas_pursuit) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.441616] (thomas_pursuit) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.445598] (thomas_pursuit) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.452182] (thomas_pursuit) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.462548] (thomas_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.476420] (thomas_pursuit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500640] (-) TimerEvent: {}
+[0.508720] (thomas_pursuit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.511169] (thomas_pursuit) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.592282] (thomas_pursuit) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.600855] (-) TimerEvent: {}
+[0.614983] (thomas_pursuit) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.641044] (thomas_pursuit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.647482] (thomas_pursuit) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700364] (thomas_pursuit) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.700652] (thomas_pursuit) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700892] (-) TimerEvent: {}
+[0.763370] (thomas_pursuit) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.764216] (thomas_pursuit) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.801124] (-) TimerEvent: {}
+[0.806762] (thomas_pursuit) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.818608] (thomas_pursuit) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.830907] (thomas_pursuit) StdoutLine: {'line': b'-- Found pluginlib: 5.1.2 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[0.847615] (thomas_pursuit) StdoutLine: {'line': b'-- Found nav2_core: 1.1.19 (/opt/ros/humble/share/nav2_core/cmake)\n'}
+[0.901351] (-) TimerEvent: {}
+[1.001728] (-) TimerEvent: {}
+[1.007031] (thomas_pursuit) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.007185] (thomas_pursuit) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.101951] (-) TimerEvent: {}
+[1.105899] (thomas_pursuit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.163802] (thomas_pursuit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.163936] (thomas_pursuit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/traore/Documents/ws/thomas_pursuit/include>\n'}
+[1.163972] (thomas_pursuit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.165674] (thomas_pursuit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.169512] (thomas_pursuit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.169584] (thomas_pursuit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.170364] (thomas_pursuit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.171026] (thomas_pursuit) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.202202] (-) TimerEvent: {}
+[1.257072] (thomas_pursuit) StdoutLine: {'line': b'-- Generating done\n'}
+[1.261420] (thomas_pursuit) StdoutLine: {'line': b'-- Build files have been written to: /home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit\n'}
+[1.268614] (thomas_pursuit) CommandEnded: {'returncode': 0}
+[1.269295] (thomas_pursuit) JobProgress: {'identifier': 'thomas_pursuit', 'progress': 'build'}
+[1.270161] (thomas_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit', '--', '-j12', '-l12'], 'cwd': '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'fr_FR:en'), ('USER', 'traore'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '2294065'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/traore'), ('OLDPWD', '/home/traore/Documents/ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '3955'), ('SYSTEMD_EXEC_PID', '4134'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2150019'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'traore'), ('JOURNAL_STREAM', '8:25380'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'traore'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/traore-Latitude-5430:@/tmp/.ICE-unix/4105,unix/traore-Latitude-5430:/tmp/.ICE-unix/4105'), ('INVOCATION_ID', '8fdd609269cc4808988f8ba544c34389'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1QH8D3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXJpvGmU/agent.2294064'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b2bc9c22-40fb-459a-965f-4e4e5850cc0e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/traore/Documents/ws/thomas_pursuit/build/thomas_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.302300] (-) TimerEvent: {}
+[1.312841] (thomas_pursuit) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/thomas_pursuit.dir/src/thomas_pursuit.cpp.o\x1b[0m\n'}
+[1.402397] (-) TimerEvent: {}
+[1.502714] (-) TimerEvent: {}
+[1.603044] (-) TimerEvent: {}
+[1.703300] (-) TimerEvent: {}
+[1.803540] (-) TimerEvent: {}
+[1.903781] (-) TimerEvent: {}
+[2.004044] (-) TimerEvent: {}
+[2.104332] (-) TimerEvent: {}
+[2.204620] (-) TimerEvent: {}
+[2.304908] (-) TimerEvent: {}
+[2.405176] (-) TimerEvent: {}
+[2.505431] (-) TimerEvent: {}
+[2.605767] (-) TimerEvent: {}
+[2.706067] (-) TimerEvent: {}
+[2.806362] (-) TimerEvent: {}
+[2.906621] (-) TimerEvent: {}
+[3.006913] (-) TimerEvent: {}
+[3.107170] (-) TimerEvent: {}
+[3.207499] (-) TimerEvent: {}
+[3.223070] (thomas_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/traore/Documents/ws/thomas_pursuit/src/thomas_pursuit.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void nav2_thomas_pursuit_::ThomasPursuit::configure(const WeakPtr&, std::string, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::Costmap2DROS>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.223297] (thomas_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/traore/Documents/ws/thomas_pursuit/src/thomas_pursuit.cpp:68:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_tolerance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgoal_tolerance_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.223377] (thomas_pursuit) StderrLine: {'line': b'   68 |     node-> get_parameter(plugin_name_+ ".goal_tolerance", \x1b[01;31m\x1b[Kgoal_tolerance\x1b[m\x1b[K);\n'}
+[3.223445] (thomas_pursuit) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.223508] (thomas_pursuit) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Kgoal_tolerance_\x1b[m\x1b[K\n'}
+[3.228996] (thomas_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/traore/Documents/ws/thomas_pursuit/src/thomas_pursuit.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual geometry_msgs::msg::TwistStamped nav2_thomas_pursuit_::ThomasPursuit::computeVelocityCommands(const PoseStamped&, const Twist&, nav2_core::GoalChecker*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.229150] (thomas_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/traore/Documents/ws/thomas_pursuit/src/thomas_pursuit.cpp:138:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_tolerance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgoal_tolerance_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.229229] (thomas_pursuit) StderrLine: {'line': b'  138 |     if (dist_to_goal <= \x1b[01;31m\x1b[Kgoal_tolerance\x1b[m\x1b[K) {\n'}
+[3.229293] (thomas_pursuit) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.229353] (thomas_pursuit) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Kgoal_tolerance_\x1b[m\x1b[K\n'}
+[3.307721] (-) TimerEvent: {}
+[3.408023] (-) TimerEvent: {}
+[3.508405] (-) TimerEvent: {}
+[3.608652] (-) TimerEvent: {}
+[3.708932] (-) TimerEvent: {}
+[3.809229] (-) TimerEvent: {}
+[3.909496] (-) TimerEvent: {}
+[4.009910] (-) TimerEvent: {}
+[4.110284] (-) TimerEvent: {}
+[4.210651] (-) TimerEvent: {}
+[4.311026] (-) TimerEvent: {}
+[4.339778] (thomas_pursuit) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/thomas_pursuit.dir/build.make:76 : CMakeFiles/thomas_pursuit.dir/src/thomas_pursuit.cpp.o] Erreur 1\n'}
+[4.340119] (thomas_pursuit) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/thomas_pursuit.dir/all] Erreur 2\n'}
+[4.340319] (thomas_pursuit) StderrLine: {'line': b'gmake: *** [Makefile:146 : all] Erreur 2\n'}
+[4.342178] (thomas_pursuit) CommandEnded: {'returncode': 2}
+[4.350416] (thomas_pursuit) JobEnded: {'identifier': 'thomas_pursuit', 'rc': 2}
+[4.360755] (-) EventReactorShutdown: {}

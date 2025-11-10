@@ -65,7 +65,7 @@ void ThomasPursuit::configure(
     transform_tolerance_ = rclcpp::Duration::from_seconds(transform_tolerance);
     node-> get_parameter(plugin_name_ + ".min_lookahead_dist", min_lookahead_dist_);
     node-> get_parameter(plugin_name_ + ".max_lookahead_dist", max_lookahead_dist_);
-    node-> get_parameter(plugin_name_+ ".goal_tolerance", goal_tolerance);
+    node-> get_parameter(plugin_name_+ ".goal_tolerance", goal_tolerance_);
     node-> get_parameter(plugin_name_ + ".curvature_limit", curvature_limit_);
 
     global_pub_ = node->create_publisher<nav_msgs::msg::Path>("received_global_plan", 1);
@@ -135,7 +135,7 @@ geometry_msgs::msg::TwistStamped ThomasPursuit::computeVelocityCommands(
     double dist_to_goal = hypot(last_pose.position.x - pose.pose.position.x,
                                 last_pose.position.y - pose.pose.position.y);
 
-    if (dist_to_goal <= goal_tolerance) {
+    if (dist_to_goal <= goal_tolerance_) {
         geometry_msgs::msg::TwistStamped stop_cmd;
         stop_cmd.header.frame_id = pose.header.frame_id;
         stop_cmd.header.stamp = clock_->now();
