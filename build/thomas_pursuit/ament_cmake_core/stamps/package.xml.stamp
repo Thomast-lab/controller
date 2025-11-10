@@ -3,7 +3,7 @@
 <package format="3">
   <name>thomas_pursuit</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>a pure pursuit customized</description>
   <maintainer email="thomas.traore@etu.umontpellier.fr">traore</maintainer>
   <license>Apache-2.0</license>
 
