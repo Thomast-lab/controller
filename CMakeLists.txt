@@ -15,6 +15,7 @@ find_package(pluginlib REQUIRED)
 find_package(nav2_core REQUIRED)
 find_package(nav2_util REQUIRED)
 find_package(nav2_costmap_2d REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -32,7 +33,8 @@ ament_target_dependencies(${PROJECT_NAME}
   pluginlib
   nav2_core
   nav2_util
-  nav2_costmap_2d 
+  nav2_costmap_2d
+  std_msgs 
 )
 
 if(BUILD_TESTING)

@@ -13,6 +13,7 @@
 #include "rclcpp_lifecycle/lifecycle_publisher.hpp"
 #include "nav2_costmap_2d/costmap_filters/filter_values.hpp"
 #include "nav2_costmap_2d/costmap_2d_ros.hpp"
+#include "std_msgs/msg/float64.hpp"
 
 using rcl_interfaces::msg::ParameterType;
 using std::hypot;
@@ -69,6 +70,8 @@ void ThomasPursuit::configure(
     node-> get_parameter(plugin_name_ + ".curvature_limit", curvature_limit_);
 
     global_pub_ = node->create_publisher<nav_msgs::msg::Path>("received_global_plan", 1);
+    lateral_error_pub_ = node->create_publisher<std_msgs::msg::Float64>("lateral_error", rclcpp::QoS(10));
+    angular_error_pub_ = node->create_publisher<std_msgs::msg::Float64>("angular_error", rclcpp::QoS(10));
 } 
 
 void ThomasPursuit::cleanup()
@@ -98,6 +101,28 @@ void ThomasPursuit::setSpeedLimit(const double &speed_limit, const bool &percent
     (void) percentage;
 }
 
+double angle_wrap (double angle){
+            while (angle > M_PI) angle -= 2.0*M_PI;
+            while (angle < -M_PI) angle += 2.0*M_PI;
+            return angle;}
+
+std::pair<double, double> compute_errors(
+    const geometry_msgs::msg::Pose & robot_pose,
+    const geometry_msgs::msg::Pose & traj_pose,
+    double traj_theta,
+    double robot_theta)
+{
+// erreur latérale
+    auto e_lat = std::abs(
+        (robot_pose.position.x - traj_pose.position.x) * -sin(traj_theta) +
+        (robot_pose.position.y - traj_pose.position.y) * cos(traj_theta)
+    );
+
+    auto e_ang = angle_wrap(traj_theta - robot_theta);
+
+    return {e_lat, e_ang};
+}
+
 geometry_msgs::msg::TwistStamped ThomasPursuit::computeVelocityCommands(
     const geometry_msgs::msg::PoseStamped & pose,
     const geometry_msgs::msg::Twist & velocity,
@@ -105,19 +130,40 @@ geometry_msgs::msg::TwistStamped ThomasPursuit::computeVelocityCommands(
 {
     (void) velocity;
     (void) goal_checker;
-    // find the firste pose which is at a distance greater than the specified lkhd dist
+    // Trouve la première pose qui a une distance supérieure à la lkhd dist spécifique
     double effective_lookahead = std::clamp(lookahead_dist_, min_lookahead_dist_, max_lookahead_dist_);
-    auto goal_pose = std::find_if(
+    auto it = std::find_if(
         global_plan_.poses.begin(), global_plan_.poses.end(),
         [&](const auto & global_plan_pose) {
             return hypot(
                 global_plan_pose.pose.position.x, global_plan_pose.pose.position.y) >= effective_lookahead;
-        })->pose;
+        });
+    
+    if (it == global_plan_.poses.end()) {
+    // Aucun point trouvé, on arrête le robot proprement
+        geometry_msgs::msg::TwistStamped stop_cmd;
+        stop_cmd.header.frame_id = pose.header.frame_id;
+        stop_cmd.header.stamp = clock_->now();
+        stop_cmd.twist.linear.x = 0.0;
+        stop_cmd.twist.angular.z = 0.0;
+        return stop_cmd;
+}
+    const auto & goal_pose = it->pose;
 
-    double linear_vel, angular_vel;
+// Calculs d'angles
+    double robot_theta = tf2::getYaw(pose.pose.orientation);
+    double traj_theta = tf2::getYaw(goal_pose.orientation);
 
+// calculs des erreurs
+    auto [e_lat, e_ang] = compute_errors(
+        pose.pose,
+        goal_pose,
+        traj_theta,
+        robot_theta);
 // If the goal pose is in front of the robot then compute the velocity using the pure pursuit algorithm
 // else rotate with the max angular velocity until the goal pose is in front of the robot
+
+    double linear_vel, angular_vel;
 
     if (goal_pose.position.x > 0) {
     
@@ -131,29 +177,38 @@ geometry_msgs::msg::TwistStamped ThomasPursuit::computeVelocityCommands(
     angular_vel = max_angular_vel_;
     }
 
-  // Verify if the robot has reached goal  
-    auto last_pose = global_plan_.poses.back().pose;
-    double dist_to_goal = hypot(last_pose.position.x - pose.pose.position.x,
-                                last_pose.position.y - pose.pose.position.y);
+// Vérifier qque le robot a atteint l'objectif
+    if (!global_plan_.poses.empty()) {
+        auto last_pose = global_plan_.poses.back().pose;
+        double dist_to_goal = hypot(
+            last_pose.position.x - pose.pose.position.x,
+            last_pose.position.y - pose.pose.position.y);
 
-    if (dist_to_goal <= goal_tolerance_) {
-        geometry_msgs::msg::TwistStamped stop_cmd;
-        stop_cmd.header.frame_id = pose.header.frame_id;
-        stop_cmd.header.stamp = clock_->now();
-        stop_cmd.twist.linear.x = 0.0;
-        stop_cmd.twist.angular.z = 0.0;
-        return stop_cmd;
-    }
+        if (dist_to_goal <= goal_tolerance_) {
+            geometry_msgs::msg::TwistStamped stop_cmd;
+            stop_cmd.header.frame_id = pose.header.frame_id;
+            stop_cmd.header.stamp = clock_->now();
+            stop_cmd.twist.linear.x = 0.0;
+            stop_cmd.twist.angular.z = 0.0;
+            return stop_cmd;
+    }}
+    
+    std_msgs::msg::Float64 lat_msg, ang_msg;
+    lat_msg.data = e_lat;
+    ang_msg.data = e_ang;
+    lateral_error_pub_->publish(lat_msg);
+    angular_error_pub_->publish(ang_msg);
 
   // Create and publish a TwistStamped message with the desired velocity
     geometry_msgs::msg::TwistStamped cmd_vel;
     cmd_vel.header.frame_id = pose.header.frame_id;
     cmd_vel.header.stamp = clock_->now();
     cmd_vel.twist.linear.x = linear_vel;
-    cmd_vel.twist.angular.z = max(
-        -1.0 * abs(max_angular_vel_), min(
-            angular_vel, abs(max_angular_vel_)));
+    cmd_vel.twist.angular.z = std::max(
+        -1.0 * std::abs(max_angular_vel_), std::min(
+            angular_vel, std::abs(max_angular_vel_)));
 
+    RCLCPP_INFO(logger_, "Erreur latérale : %f, Erreur angulaire : %f", e_lat, e_ang);
     return cmd_vel;
 }
 
@@ -173,7 +228,7 @@ nav_msgs::msg::Path ThomasPursuit::transformGlobalPlan(const nav_msgs::msg::Path
 
 void ThomasPursuit::setPlan(const nav_msgs::msg::Path &path)
 {
-    // transform global path int othe robot's frame
+    // Transformer le chemin global dans le repère du robot
     global_plan_ = transformGlobalPlan(path);
 }
 

@@ -15,6 +15,7 @@
 #include "rclcpp_lifecycle/lifecycle_publisher.hpp"
 #include "nav_msgs/msg/path.hpp"
 #include "nav2_costmap_2d/costmap_2d_ros.hpp"
+#include "std_msgs/msg/float64.hpp"
 
 namespace nav2_thomas_pursuit_
 {
@@ -69,6 +70,8 @@ protected:
   // plan global transformé
   nav_msgs::msg::Path global_plan_;
   rclcpp_lifecycle::LifecyclePublisher<nav_msgs::msg::Path>::SharedPtr global_pub_;
+  rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Float64>::SharedPtr lateral_error_pub_;
+  rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Float64>::SharedPtr angular_error_pub_;
 };
 
 } // namespace nav2_thomas_pursuit_
